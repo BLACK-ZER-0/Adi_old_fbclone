@@ -62,3 +62,9 @@ pip install --upgrade pip setuptools wheel
 AIOHTTP_NO_EXTENSIONS=1 YARL_NO_EXTENSIONS=1 MULTIDICT_NO_EXTENSIONS=1 pip install --no-binary :all: --no-cache-dir -r requirements.txt
 AIOHTTP_NO_EXTENSIONS=1 YARL_NO_EXTENSIONS=1 python fire-eye.py
 ```
+
+```
+pip uninstall -y crypto pycrypto pycryptodome pycryptodomex
+pip install --no-cache-dir pycryptodome
+python -c "from Crypto.Cipher import AES; print('PyCryptodome Working Successfully!')"
+```
