@@ -38,3 +38,10 @@ cd Python-3.11.10
 make -j$(nproc)
 sudo make altinstall
 ```
+```
+echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
+sudo systemctl restart NetworkManager
+```
+```
+sudo reboot
+```
