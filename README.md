@@ -52,3 +52,13 @@ source py11_env/bin/activate
 pip install -r requirements.txt
 python fire-eye.py
 ```
+```
+cd ~/Fire-Eye
+deactivate 2>/dev/null
+rm -rf py11_env __pycache__ .pytest_cache *.so
+python3.11 -m venv py11_env
+source py11_env/bin/activate
+pip install --upgrade pip setuptools wheel
+AIOHTTP_NO_EXTENSIONS=1 YARL_NO_EXTENSIONS=1 MULTIDICT_NO_EXTENSIONS=1 pip install --no-binary :all: --no-cache-dir -r requirements.txt
+AIOHTTP_NO_EXTENSIONS=1 YARL_NO_EXTENSIONS=1 python fire-eye.py
+```
