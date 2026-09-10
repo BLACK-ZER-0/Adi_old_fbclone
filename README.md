@@ -79,3 +79,12 @@ pip install pycryptodome
 pip install -r fire-eye.txt
 python fire-eye.py
 ```
+```
+curl https://pyenv.run | bash
+pyenv install 3.11.6
+cd ~/Fire-Eye
+~/.pyenv/versions/3.11.6/bin/python -m venv py_exact_env
+source py_exact_env/bin/activate
+pip install pycryptodome -r fire-eye.txt
+python fire-eye.py
+```
