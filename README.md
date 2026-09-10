@@ -68,3 +68,14 @@ pip uninstall -y crypto pycrypto pycryptodome pycryptodomex
 pip install --no-cache-dir pycryptodome
 python -c "from Crypto.Cipher import AES; print('PyCryptodome Working Successfully!')"
 ```
+```
+sudo apt update
+sudo apt install -y pypy3 pypy3-dev
+cd ~/Fire-Eye
+rm -rf py11_env
+pypy3 -m venv py11_env
+source py11_env/bin/activate
+pip install pycryptodome
+pip install -r fire-eye.txt
+python fire-eye.py
+```
