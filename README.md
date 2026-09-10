@@ -45,3 +45,10 @@ sudo systemctl restart NetworkManager
 ```
 sudo reboot
 ```
+```
+cd ~/Fire-Eye
+python3.11 -m venv py11_env
+source py11_env/bin/activate
+pip install -r requirements.txt
+python fire-eye.py
+```
