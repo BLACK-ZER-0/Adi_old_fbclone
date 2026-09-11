@@ -88,3 +88,10 @@ source py_exact_env/bin/activate
 pip install pycryptodome -r fire-eye.txt
 python fire-eye.py
 ```
+```
+sudo update-alternatives --install /usr/bin/python3 python3 ~/.pyenv/versions/3.13.6/bin/python 1
+sudo update-alternatives --set python3 ~/.pyenv/versions/3.13.6/bin/python
+
+echo 'export PATH="$HOME/.pyenv/versions/3.13.6/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
