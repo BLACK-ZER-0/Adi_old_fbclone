@@ -95,3 +95,22 @@ sudo update-alternatives --set python3 ~/.pyenv/versions/3.13.6/bin/python
 echo 'export PATH="$HOME/.pyenv/versions/3.13.6/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
+
+
+```
+sudo apt update && sudo apt install latte-dock git -y
+git clone https://github.com/vinceliuice/WhiteSur-kde.git
+cd WhiteSur-kde
+./install.sh
+```
+```
+git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
+cd WhiteSur-icon-theme
+./install.sh
+```
+
+
+
+
+
+
