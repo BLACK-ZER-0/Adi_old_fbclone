@@ -26,6 +26,13 @@ python3 'Old Adi.py'
 enjoy the tool 🤙
 
 ```
+sudo mkdir -p /etc/sddm.conf.d/
+echo -e "[General]\nQT_QUICK_BACKEND=software" | sudo tee /etc/sddm.conf.d/rendering.conf
+sudo apt update
+sudo apt install -y virtualbox-guest-x11 virtualbox-guest-utils
+echo -e "[General]\nDisplayServer=x11" | sudo tee -a /etc/sddm.conf.d/rendering.conf
+```
+```
 sudo apt update
 sudo apt install qml-module-qtquick-controls qml-module-qtquick-controls2 qml-module-qtgraphicaleffects qml-module-qtquick-layouts -y
 ```
