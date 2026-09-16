@@ -120,6 +120,15 @@ cd WhiteSur-icon-theme
     }
 }
 ```
+```
+
+sudo apt update && sudo apt install -y build-essential dkms git linux-headers-$(uname -r) && \
+git clone https://github.com/clnhub/rtl8192eu-linux.git && \
+cd rtl8192eu-linux && \
+sudo dkms add . && \
+sudo dkms install rtl8192eu/1.0 && \
+sudo reboot
+```
 
 
 
