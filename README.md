@@ -25,6 +25,10 @@ python3 'Old Adi.py'
 
 enjoy the tool 🤙
 
+```
+sudo apt update
+sudo apt install qml-module-qtquick-controls qml-module-qtquick-controls2 qml-module-qtgraphicaleffects qml-module-qtquick-layouts -y
+```
 
 ```
 sudo apt update && sudo apt install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
