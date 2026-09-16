@@ -109,6 +109,17 @@ cd WhiteSur-icon-theme
 ./install.sh
 ```
 
+```
+  Timer {
+    id: delayTimer
+    interval: 5000 // ৫ সেকেন্ড ডিলয় (milliseconds)
+    running: true
+    repeat: false
+    onTriggered: {
+        // অ্যানিমেশন হোল্ড করার লজিক
+    }
+}
+```
 
 
 
