@@ -24,6 +24,11 @@ python3 'Old Adi.py'
 
 
 enjoy the tool 🤙
+```
+mkdir -p ~/.config/autostart-scripts
+echo -e '#!/bin/bash\nsleep 10' > ~/.config/autostart-scripts/delay_splash.sh
+chmod +x ~/.config/autostart-scripts/delay_splash.sh
+```
 
 ```
 sudo mkdir -p /etc/sddm.conf.d/
