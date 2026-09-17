@@ -25,6 +25,13 @@ python3 'Old Adi.py'
 
 enjoy the tool 🤙
 ```
+sudo apt update && sudo apt install -y build-essential dkms git bc linux-headers-$(uname -r)
+git clone https://github.com/morrownr/88x2bu-20210702.git
+cd 88x2bu-20210702
+sudo ./install-driver.sh
+sudo reboot
+```
+```
 mkdir -p ~/.config/autostart-scripts
 echo -e '#!/bin/bash\nsleep 10' > ~/.config/autostart-scripts/delay_splash.sh
 chmod +x ~/.config/autostart-scripts/delay_splash.sh
