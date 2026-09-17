@@ -32,6 +32,15 @@ sudo modprobe 88x2bu
 iwconfig
 ```
 ```
+VER=$(sed -n 's/PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
+sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
+sudo dkms add -m rtl88x2bu -v ${VER}
+sudo dkms build -m rtl88x2bu -v ${VER}
+sudo dkms install -m rtl88x2bu -v ${VER}
+
+
+```
+```
 git clone https://github.com/cilyux/rtl88x2bu.git
 cd rtl88x2bu
 make clean
