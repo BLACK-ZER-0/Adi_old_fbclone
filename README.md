@@ -25,6 +25,14 @@ python3 'Old Adi.py'
 
 enjoy the tool 🤙
 ```
+git clone https://github.com/cilyux/rtl88x2bu.git
+cd rtl88x2bu
+make clean
+make
+sudo make install
+sudo modprobe 88x2bu
+iwconfig
+```
 sudo apt update && sudo apt install -y build-essential dkms git bc linux-headers-$(uname -r)
 git clone https://github.com/morrownr/88x2bu-20210702.git
 cd 88x2bu-20210702
