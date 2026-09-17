@@ -25,6 +25,11 @@ python3 'Old Adi.py'
 
 enjoy the tool 🤙
 ```
+git clone https://github.com/kimocoder/oneshot.git
+cd oneshot
+sudo python3 oneshot.py -i wlan0 -K
+```
+```
 git clone https://github.com/rinCat/RTL88x2BU-Linux-Driver.git
 cd RTL88x2BU-Linux-Driver
 sudo ./dkms-install.sh
