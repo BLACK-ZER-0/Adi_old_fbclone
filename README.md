@@ -25,6 +25,13 @@ python3 'Old Adi.py'
 
 enjoy the tool 🤙
 ```
+git clone https://github.com/rinCat/RTL88x2BU-Linux-Driver.git
+cd RTL88x2BU-Linux-Driver
+sudo ./dkms-install.sh
+sudo modprobe 88x2bu
+iwconfig
+```
+```
 git clone https://github.com/cilyux/rtl88x2bu.git
 cd rtl88x2bu
 make clean
