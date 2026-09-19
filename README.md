@@ -25,6 +25,13 @@ python3 'Old Adi.py'
 
 enjoy the tool 🤙
 ```
+sudo apt update
+sudo apt install build-essential dkms git
+git clone https://github.com/cilynx/rtl88x2bu.git
+cd rtl88x2bu
+sudo make dkms_install
+```
+```
 git clone https://github.com/kimocoder/oneshot.git
 cd oneshot
 sudo python3 oneshot.py -i wlan0 -K
